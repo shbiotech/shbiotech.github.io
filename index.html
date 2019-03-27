@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>TSA at Biotech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  .img-responsive(@display: block) {
+  display: @display;
+  max-width: 80%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+ }
+ .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    max-height: 650px; !important
+    margin: auto;
+  }
+ .navbar-default {
+    background-color: #333;
+  }
+  p {font-size: 24px;}
+  .margin {margin-bottom: 45px;}
+
+  .bg-1 { 
+    background-color: #ffffff; /* White*/
+    color: #555555;
+  }
+  .bg-2 { 
+    background-color: #828080; /* Grey*/
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #000823; /* Deep Blue */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+   p2 {font-size: 18px;}
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+  /* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible; 
+}
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TSA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#container_2">About</a></li>
+        <li><a href="#container_3">Science Competitions</a></li>
+        <li><a href="#container_4">Engineering Events</a></li>
+        <li><a href="#container_2">TEAMS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <!--<h3 class="margin">TSA at Biotech</h3> 
+  
+<!-- CAROUSEL START -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="TSAImage3.jpg" alt="New York" width="1600" height="500">
+        <div class="carousel-caption">
+          <h3 style="color:black">Technology Student Association</h3>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="TSAImage2.jpg" alt="Chicago" width="1600" height="500">
+        <div class="carousel-caption">
+          <h3 style="color:black">TEAMS</h3>
+          <p style="color:black">TEAMS stands for Tests of Engineering Aptitude, Mathematics, and Science</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="TSAImage1.jpg" alt="Los Angeles" width="1600" height="500">
+        <div class="carousel-caption">
+          <h3>Competitions</h3>
+          <!--<p>Students are able to test their skills as they compete against others in regional and hopefully national conferences</p>-->
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- END CAROUSEL-->
+
+</div>
+
+<!-- Second Container -->
+<div id="container_2" class="container-fluid bg-2 text-center">
+   <h3 class="margin">About</h3>
+   <div class="row slideanim">
+  <p>TSA allows students to explore the realms of technology, engineering, science, and mathematics. TSA at Biotech allows students to explore projects and events outside their mainstream science courses. With events requiring skills in science, technology, engineering, and mathematics, TSA allows students to develop these skills  while giving them leadership, management,and academic opportunities. Navigate through this site to find out more about TSA competitions and events. </p>
+  </div>
+  <video src="lucyl_5604.mov" autoplay="autoplay" muted="muted" loop="loop" height="270" width="480"> </video> 
+ </div>
+
+<!--Third Container (Grid)-->
+<div id="container_3" class="container-fluid bg-1 text-center">    
+  <h3 class="margin">Science Competitions</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Biotechnology Design</p>
+      <p2>A combination of science and engineering, students must select a current biotechnology problem and develop a solution, showing complete understanding of the topic through detailed research, a display, and a multimedia presentation.</p2>
+      <img src="https://study.uwa.edu.au/-/media/UWAFS/Teasers/ImgBtn-Master-of-Biotechnology.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Forensic Science</p>
+      <p2>The Forensic Science competition takes place in 2 parts. First, participants must take a written test on forensic science theory. Those who qualify as semifinalists will then examine a mock crime scene and demonstrate their knowledge, using proper techniques to collect evidence and write a detailed analysis on their findings.</p2> 
+      <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2018/fbiforensics.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Scientific Visualization (SciVis)</p>
+      <p2>Participants will use computer graphics tools to communicate, analyze, and illustrate a STEM concept.</p2>
+      <img src="http://scv.bu.edu/documentation/tutorials/SciVis/images/sm_fan_2000pL.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+   </div>
+</div>
+
+<!--Fourth Container (Grid)-->
+<div id="container_4" class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Engineering Events</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Animatronics</p>
+      <p2></p2>
+       <a href="#showcol1" data-toggle="collapse">
+      <img src="animatronics3.jpg" class="img-circle" style="width:100%" alt="Image">
+             </a>
+      <div id="showcol1" class="collapse">
+        <p>Create an Animatronic exhibit for a natural history museum</p>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Computer Integrated Manufacturing</p>
+      <a href="#showcol2" data-toggle="collapse">
+      <img src="CIM1.jpg" class="img-circle" style="width:100%" alt="Image">
+      </a>
+      <div id="showcol2" class="collapse">
+        <p>A STEM-themed toy that will showcase the current conference city and/or state</p>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Engineering Design</p>
+      <a href="#showcol3" data-toggle="collapse">
+      <img src="Solar1.jpg" class="img-circle" style="width:100%" alt="Image">
+      </a>
+      <div id="showcol3" class="collapse">
+        <p>Practical and Cost Effective Uses for Solar Energy In and Around a Home</p>
+      </div>
+    </div>
+   </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid bg-2 text-center">
+  <video src="lucyl_5604.mov" autoplay="autoplay" muted="muted" loop="loop" height="270" width="480"> </video>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
